@@ -63,14 +63,9 @@ for (let i = 0; i < supplyChanges.length; i++) {
     zeroes.push(supplyChanges[i]);
   }
 }
-console.log(positives);
-console.log(negatives);
-console.log(zeroes);
-
-
-
-
-
+console.log('positives:', positives);
+console.log('negatives:', negatives);
+console.log('zeroes:', zeroes);
 
 
 // ***** STRETCH GOALS *********************************************
@@ -78,6 +73,23 @@ console.log(zeroes);
 //    'negatives', and 'zeroes', create three new arrays named 'stretchPositives',
 //    'stretchNegatives', and 'stretchZeroes'. 
 console.log('7. Looping through supplyChanges to populate more arrays with positive, negative, and zero values:');
+
+let stretchPositives = [];
+let stretchNegatives = [];
+let stretchZeroes = [];
+
+for (const number of supplyChanges) {
+  if (number > 0) {
+    stretchPositives.push(number);
+  } else if (number<0) {
+    stretchNegatives.push(number);
+  } else {
+    stretchZeroes.push(number);
+  }
+}
+console.log('stretchPositives:', stretchPositives);
+console.log('stretchNegatives:', stretchNegatives);
+console.log('stretchZeroes:', stretchZeroes);
 
 
 // 8. Create a variable called 'totalParts' and assign it a value of 0.
